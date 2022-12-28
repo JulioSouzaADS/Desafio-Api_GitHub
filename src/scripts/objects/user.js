@@ -3,8 +3,8 @@ const user = {
     name:'',
     bio:'' ,
     userName: '',
-    followers:'' ,
-    following:'' ,
+    followers:0 ,
+    following:0 ,
     repositories : [],
     forks:0 ,
     language:'' ,
@@ -12,8 +12,6 @@ const user = {
     watchers:0 ,
     stargazers_count:0,
     events : [],
-    eventsData : [],
-    location:'',
 
     setInfo(gitHubUser) {
         this.avatarUrl = gitHubUser.avatar_url;
@@ -21,26 +19,16 @@ const user = {
         this.bio =gitHubUser.bio;
         this.userName = gitHubUser.login;
         this.followers = gitHubUser.followers;
-        this.following = gitHubUser.following;
-        console.log(gitHubUser)
-       
+        this.following = gitHubUser.following;      
      },
+
      setRepositories (repositories){
         this.repositories = repositories
-        this.forks = repositories.forks
-        this.language = repositories.language
-        this.watchers = repositories.watchers
-        this.stargazers_count = repositories.stargazers_count
-        this.location =repositories.location
-        console.log(repositories)
-       
+             },
 
-     },
      setEvents (events){
          this.events = events
-         this.eventsData = events.payload.commits
-         console.log(events)
-        //  console.log(events.data)
+
      }
    
 }

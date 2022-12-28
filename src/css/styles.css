@@ -142,6 +142,8 @@ main {
   border-radius: 7px;
   transition: 0.3s ease-in-out;
   background-color: royalblue;
+  color: rgb(15, 5, 1);
+  font-style: italic;
 }
 
 .container .profile-data .repositories ul li a:hover{
@@ -153,6 +155,41 @@ main {
  background-color: rgb(221, 215, 215) ;
  border-radius: 5px;
  padding: 5px;
+}
+
+/* EVENTOS */
+
+.container .profile-data .eventos h2{
+  margin-bottom: 30px;
+  text-align: center;
+  color: royalblue;
+}
+
+.container .profile-data .eventos ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: whitesmoke;
+  background-color: royalblue;
+  border-radius: 5px solid;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.container .profile-data .eventos ul li a{
+  padding: 20px;
+  border: 1px solid grey;  
+  margin: 20px;
+  display: block;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+  color: royalblue;
+}
+
+.container .profile-data .eventos ul li a:hover{
+  background-color:hotpink;
+  color: #fff;
 }
 
 

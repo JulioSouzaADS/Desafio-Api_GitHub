@@ -33,7 +33,6 @@ function validateEmptyInput(userName) {
     }
 }
 
-// console.log (await user())
 async function getUserData(username) {
         const userResponse = await getUser(username)
 
@@ -43,13 +42,13 @@ async function getUserData(username) {
         }
 
         const repositoriesResponse = await getRepositories(username)
-        user.setInfo(userResponse)
-            user.setRepositories(repositoriesResponse)
-
-        screen.renderUser(user)
-        
         const eventsResponse = await getUserEvents(username)
+
+        user.setInfo(userResponse)
+        user.setRepositories(repositoriesResponse)
         user.setEvents(eventsResponse)
+        
+        screen.renderUser(user)
 }
 
 
