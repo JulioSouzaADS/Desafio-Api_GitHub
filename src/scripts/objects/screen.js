@@ -29,11 +29,11 @@ const screen = {
         user.events.forEach((eventos) => {
             const tiposEventos = eventos.type=== "CreateEvent" || eventos.type === "PushEvent"
                 if (tiposEventos) {
-                    eventosItens += `<li> Nome Repositorio : ${eventos.repo.name} -- Tipo Evento : ${eventos.type} -- Descrição Do Commit: ${eventos.payload.commits?.[0].message?? 'Não possui commit'} <br><br> </li>`
-                    console.log(eventos)
+                    eventosItens += `<li> Nome Repositorio : ${eventos.repo.name} -- Tipo Evento : ${eventos.type} -- Descrição Do Commit: ${eventos.payload.commits?.[0].message?? 'Este Evento Não Possui Descrição 💔'} <br><br> </li>`
+                    // console.log(eventos)
                 }
 
-            console.log(tiposEventos)
+            // console.log(tiposEventos)
         })
 
              
