@@ -11,10 +11,11 @@ img {
 }
 
 body {
-  background-color:#24292e;
+  background-image: linear-gradient(to right, #474545,#9e9e99);
   font-family: "Kumbh Sans", sans-serif;  
   text-align: center;    
   padding-bottom: 100px;
+  color: rgb(219, 220, 221);
 }
 
 main {
@@ -38,7 +39,8 @@ main {
   width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
   max-width: 960px; /* quando chegar em 980px para de aumentar */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: linear-gradient(to right, #9e9e99, #474545);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,6 +69,7 @@ main {
   padding: 10px;
   border-radius: 7px;
   border: 1px solid grey;
+  background-color: #d6d2d2;
 }
 
 .container header #btn-search {
@@ -77,11 +80,13 @@ main {
   border-radius: 7px;  
   cursor: pointer;
   border: 1px solid grey;
+  background-color: #d6d2d2;
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
-  color: #ffffff;
+ 
+  background-color:  rgb(219, 220, 221);
+  color: #d6d2d2;
   border-color: #ffffff;
 }
 
@@ -106,7 +111,8 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid rgb(31, 30, 30);
+
 }
 
 .container .profile-data .info h1{
@@ -141,7 +147,8 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
-  background-color: royalblue;
+  /* background-color: royalblue; */
+  background-image: linear-gradient(to right, #474545,#9e9e99);
   color: rgb(15, 5, 1);
   font-style: italic;
 }
@@ -162,7 +169,7 @@ main {
 .container .profile-data .eventos h2{
   margin-bottom: 30px;
   text-align: center;
-  color: royalblue;
+  background-image: linear-gradient(to right, #9e9e99, #474545);
 }
 
 .container .profile-data .eventos ul{
@@ -170,7 +177,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   color: whitesmoke;
-  background-color: royalblue;
+  /* background-color: royalblue; */
+  background-image: linear-gradient(to right, #9e9e99, #474545);
   border-radius: 5px solid;
   padding: 20px;
   font-size: 20px;
